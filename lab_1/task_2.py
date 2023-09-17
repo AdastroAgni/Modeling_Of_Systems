@@ -5,6 +5,8 @@ y0 = 2 # входное значение y0
 
 r0 = 5 # радиус окружности
 
+ExpNmb = 10**4 # ДЛЯ ЗАДАНИЯ 2 ПУНКТ 1, 2, 3
+
 def CALC_PI(x0, y0, r0, ExpNmb):
     m = 0  # обнуляем количество положителяных экспериментов
 
@@ -28,8 +30,6 @@ def CALC_PI(x0, y0, r0, ExpNmb):
     return pi
 
 
-ExpNmb = 10**4 # ДЛЯ ЗАДАНИЯ 2 ПУНКТ 1, 2, 3
-
 print(f"Число Pi: {CALC_PI(x0, y0, r0, ExpNmb)}")  # ДЛЯ ЗАДАНИЯ 1 И ЗАДАНИЯ ДВА (ЧАСТЬ 1)
 
 # ДЛЯ ЗАДАНИЯ 2 ПУНКТ 2 И ПУНКТ 3
@@ -41,6 +41,7 @@ def SERIA(ExpNmb):
         ExpNmb = ExpNmb * 10
 
     return SERIA_test
+
 
 # ДЛЯ ЗАДАНИЯ 2 ПУНКТ 2 И 3
 SERIA_1 = SERIA(ExpNmb)
